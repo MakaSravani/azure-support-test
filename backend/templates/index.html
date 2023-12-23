@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eAlliance Chat bot</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Ask a Question to Athena</h1>
+    <form method="post">
+        <label for="user_question">Question:</label>
+        <input type="text" id="user_question" name="user_question" required>
+        <button type="submit">Send</button>
+    </form>
+    
+    {% if user_question %}
+        <!-- <h2>Question:</h2> -->
+        <p>{{ user_question }}</p>
+        <h2> Answer:</h2>
+        <p>{{ assistant_response }}</p>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    line-height: 24px; /* Adjust the line-height value as needed */
+    width: 70%; /* Set the width of the input field */
+    margin: auto;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color:#0000ff;
+    color: white;
+    cursor: pointer;
+}
