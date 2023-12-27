@@ -15,11 +15,16 @@
         <button type="submit">Send</button>
     </form>
     
-    {% if user_question %}
-        <!-- <h2>Question:</h2> -->
-        <p>{{ user_question }}</p>
-        <h2> Answer:</h2>
-        <p>{{ assistant_response }}</p>
+    {% if conversation_history %}
+        <h2>Conversation History:</h2>
+        <ul>
+            {% for entry in conversation_history %}
+                <li>
+                    <strong>User:</strong> {{ entry.user_question }}<br>
+                    <strong>Assistant:</strong> {{ entry.assistant_response }}
+                </li>
+            {% endfor %}
+        </ul>
     {% endif %}
 </body>
 </html>
