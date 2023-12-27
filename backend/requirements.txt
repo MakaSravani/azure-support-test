@@ -25,6 +25,8 @@ async-timeout==4.0.3
     # via aiohttp
 attrs==23.1.0
     # via aiohttp
+azure-ai-formrecognizer==3.3.2
+
 azure-common==1.1.28
     # via azure-search-documents
 azure-core==1.29.4
@@ -44,10 +46,12 @@ azure-monitor-opentelemetry==1.0.0
     # via -r requirements.in
 azure-monitor-opentelemetry-exporter==1.0.0b17
     # via azure-monitor-opentelemetry
-azure-search-documents==11.4.0b6
+azure-search-documents==11.4.0b11
     # via -r requirements.in
 azure-storage-blob==12.18.2
     # via -r requirements.in
+azure-storage-file-datalake==12.13.1
+    # via -r scripts/requirements.in
 blinker==1.6.2
     # via
     #   flask
@@ -79,10 +83,12 @@ deprecated==1.2.14
     # via opentelemetry-api
 et-xmlfile==1.1.0
     # via openpyxl
+fitz==0.0.1
 fixedint==0.1.6
     # via azure-monitor-opentelemetry-exporter
 flask==3.0.0
     # via quart
+flask-cors==4.0.0
 frozenlist==1.4.0
     # via
     #   aiohttp
@@ -267,12 +273,19 @@ pandas==2.1.1
     # via openai
 pandas-stubs==2.1.1.230928
     # via openai
+pdfplumber==0.10.3
+pdf2image==1.16.3
+PyPDF2==3.0.1
 portalocker==2.8.2
     # via msal-extensions
 priority==2.0.0
     # via hypercorn
 pycparser==2.21
     # via cffi
+pyjwt[crypto]==2.8.0
+    # via msal
+pypdf==3.16.2
+    # via -r scripts/requirements.in
 pydantic==2.4.2
     # via
     #   langchain

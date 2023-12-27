@@ -10,7 +10,8 @@ const ChatApp = () => {
 
   const handleAskQuestion = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/', { user_question: userQuestion });
+      // const response = await axios.post('http://localhost:5000/', { user_question: userQuestion });
+      const response = await axios.post('https://studious-acorn-v6vpqj66wjw63xwjq-5000.app.github.dev/', { user_question: userQuestion });
       const { user_question, assistant_response } = response.data;
 
       // Append the new message to the conversation
