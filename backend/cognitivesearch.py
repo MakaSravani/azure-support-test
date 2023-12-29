@@ -31,23 +31,23 @@ from azure.search.documents import SearchClient
 from azure.core.credentials import AzureKeyCredential
 from azure.core.exceptions import ResourceNotFoundError
 
-search_service_name = "gptkb-cdzj2obpa54em"
-index_name = "escogidxtest"
-admin_key = "VmM0fMtVNqbwZKbomZrZgRKnadwl12Qc3KXxMsXIzIAzSeBAgDyI"
+search_service_name = "" # Azure search service name
+index_name = "" # Azure cognitive search index name
+admin_key = "" # Azure cognitive search api key
 
 
 # Load environment variables
-storageaccount = "stcdzj2obpa54em"
-storagekey = "hemujwsQOW8eHoFE1qdrV78KyJ+24PSNj/yrJcGaxDqNRlU+291nfBMpYYpaprFBg7BZ+Ppvr1oo+ASti73PCg=="
-container = "esstgtesting"
-formrecognizerservice = "cog-fr-cdzj2obpa54em"
-formrecognizerkey = "6c6bbb6fadf14c73b6feee4f8b1b0f1a"
+storageaccount = "" # Azure storage account name
+storagekey = "" # Azure storage account api key
+container = "" # Azure storage account container name
+formrecognizerservice = "" # Azure form recognizer(Document intelligence) service name
+formrecognizerkey = "" # Azure form recognizer api key
 AZURE_OPENAI_MODEL = "text-embedding-ada-002"
 deployment_model = "text-embedding-ada-002"  # Replace with your actual Azure OpenAI model name
 
 # Set your OpenAI API key
-openai.api_key = "825a0d3880054857a94fd70649196ad3"
-openai.api_base = "https://cog-cdzj2obpa54em.openai.azure.com/" # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
+openai.api_key = "" # Azue open ai key
+openai.api_base = "" # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
 openai.api_type = 'azure'
 openai.api_version = '2023-05-15'
 
