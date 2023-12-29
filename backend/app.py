@@ -20,13 +20,13 @@ print(is_it_a_sequence('abc')) # True
 
 openai.api_type = "azure"
 openai.api_version = "2023-08-01-preview"
-openai.api_base = "https://cog-cdzj2obpa54em.openai.azure.com/"
-openai.api_key = "825a0d3880054857a94fd70649196ad3"
+openai.api_base = "" # Azure open ai endpoint
+openai.api_key = "" # Azure open ai key
 deployment_id = "chat"
 
-search_endpoint = "https://gptkb-cdzj2obpa54em.search.windows.net"
-search_key = "VmM0fMtVNqbwZKbomZrZgRKnadwl12Qc3KXxMsXIzIAzSeBAgDyI"
-search_index_name = "escogidxtest"
+search_endpoint = ""# azure cognitive serach service end point
+search_key = "" # Azure conginitive search key
+search_index_name = "" # Azure serach index
 
 
 def setup_byod(deployment_id: str) -> None:
