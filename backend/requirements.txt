@@ -83,7 +83,7 @@ deprecated==1.2.14
     # via opentelemetry-api
 et-xmlfile==1.1.0
     # via openpyxl
-fitz==0.0.1
+fitz
 fixedint==0.1.6
     # via azure-monitor-opentelemetry-exporter
 flask==3.0.0
