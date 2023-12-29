@@ -5,8 +5,8 @@ from azure.storage.blob import BlobServiceClient
 from azure.core.exceptions import ResourceNotFoundError
 from PyPDF2 import PdfReader, PdfWriter
 
-account_name = "stcdzj2obpa54em"
-account_key = "hemujwsQOW8eHoFE1qdrV78KyJ+24PSNj/yrJcGaxDqNRlU+291nfBMpYYpaprFBg7BZ+Ppvr1oo+ASti73PCg=="
+account_name = ""# Azure storage account name
+account_key = "" # Azure storagge account name
 container_name = "esstgtesting"
 local_folder_path = "data"
 
