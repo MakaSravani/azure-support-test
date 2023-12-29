@@ -10,6 +10,13 @@ import requests
 app = Flask(__name__)
 CORS(app)
 # app.static_folder = 'static'
+from collections.abc import Sequence
+
+def is_it_a_sequence(obj):
+    return isinstance(obj, Sequence)
+print(is_it_a_sequence([1, 2, 3])) # True
+print(is_it_a_sequence('abc')) # True
+
 
 openai.api_type = "azure"
 openai.api_version = "2023-08-01-preview"
@@ -81,4 +88,4 @@ def index():
 
 if __name__ == "__main__":
     setup_byod(deployment_id)
-    app.run(debug=True,port=5000)
+    app.run(debug=True,port=8000)
