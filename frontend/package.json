@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-backend": "python ../backend/app.py",
-    "start-dev": "concurrently \"npx serve -s build\" \"npm run start-backend\""
+    "start-dev": "concurrently \"npm start \"npm run start-backend\""
   },
   "eslintConfig": {
     "extends": [
