@@ -32,7 +32,7 @@ from azure.core.credentials import AzureKeyCredential
 from azure.core.exceptions import ResourceNotFoundError
 
 search_service_name = "" # Azure search service name
-index_name = "" # Azure cognitive search index name
+index_name = "testing" # Azure cognitive search index name
 admin_key = "" # Azure cognitive search api key
 
 
