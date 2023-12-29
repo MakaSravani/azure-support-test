@@ -9,4 +9,3 @@ pytest-cov
 pytest-playwright
 pre-commit
 locust
-pip-toolsmvn 
